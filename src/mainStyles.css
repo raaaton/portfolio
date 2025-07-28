@@ -28,6 +28,9 @@ nav {
         border-radius: 50px;
         padding: 1px;
         background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+        mask:
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
         -webkit-mask:
             linear-gradient(#fff 0 0) content-box, 
             linear-gradient(#fff 0 0);
