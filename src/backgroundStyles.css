@@ -1,5 +1,5 @@
 body {
-    background-color: #09090f;
+    background-color: #060612;
 }
 
 .background {
@@ -25,17 +25,13 @@ body {
     z-index: -300;
 }
 
-#headerBlob,
-#underHeaderBlob {
-    height: 100%;
-    width: 100%;
-}
-
 #headerBlobCtn {
     transform: translate(-45%, -50%);
 }
 #headerBlob {
-    animation: headerBlobAnim 15s infinite alternate;
+    height: 100%;
+    width: 100%;
+    animation: headerBlobAnim 25s infinite alternate;
 }
 @keyframes headerBlobAnim {
     from {
@@ -47,14 +43,17 @@ body {
 }
 
 #underHeaderBlobCtn {
-    transform: translate(-50%, -50%);
+    transform: translate(-100%, -100%);
 }
 #underHeaderBlob {
-    animation: underHeaderBlobAnim 15s infinite alternate;
+    height: 200%;
+    width: 200%;
+    animation: underHeaderBlobAnim 25s infinite alternate;
+    opacity: 1;
 }
 @keyframes underHeaderBlobAnim {
     from {
-        opacity: 0.4;
+        opacity: 0.5;
     }
     to {
         opacity: 0.1;
@@ -76,8 +75,8 @@ body {
 
 .grain {
     height: 100%;
-    background-color: #000000;
-    opacity: 25%;
+    background-color: #060612;
+    opacity: 20%;
     z-index: -100;
 }
 
