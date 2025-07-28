@@ -1,0 +1,93 @@
+body {
+    background-color: #09090f;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Blobs */
+
+#headerBlobCtn,
+#underHeaderBlobCtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100vw;
+    z-index: -300;
+}
+
+#headerBlob,
+#underHeaderBlob {
+    height: 100%;
+    width: 100%;
+}
+
+#headerBlobCtn {
+    transform: translate(-45%, -50%);
+}
+#headerBlob {
+    animation: headerBlobAnim 15s infinite alternate;
+}
+@keyframes headerBlobAnim {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-40deg);
+    }
+}
+
+#underHeaderBlobCtn {
+    transform: translate(-50%, -50%);
+}
+#underHeaderBlob {
+    animation: underHeaderBlobAnim 15s infinite alternate;
+}
+@keyframes underHeaderBlobAnim {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
+
+/* Cross pattern */
+
+.crossPatternCtn {
+    opacity: 0.75;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -200;
+}
+
+/* Grain */
+
+.grain {
+    height: 100%;
+    background-color: #000000;
+    opacity: 25%;
+    z-index: -100;
+}
+
+.grain:after {
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    content: "";
+    height: 300%;
+    width: 300%;
+    left: -100%;
+    top: -110%;
+    opacity: 0.8;
+    position: fixed;
+}
