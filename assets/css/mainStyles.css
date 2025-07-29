@@ -1,11 +1,17 @@
+:root {
+    --background: #060612;
+    --text-color: #D1DEF5;
+    --secondary-text-color: #849ECD;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
-    color: #E4E9F3;
+    color: var(--text-color);
 }
 
 .gradientText {
-    background: linear-gradient(to bottom, #D1DEF5, #849ECD);
+    background: linear-gradient(to bottom, var(--text-color), var(--secondary-text-color));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,11 +43,11 @@ nav {
         padding: 1px;
         background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
         mask:
-            linear-gradient(#fff 0 0) content-box, 
-            linear-gradient(#fff 0 0);
+            linear-gradient(white 0 0) content-box, 
+            linear-gradient(white 0 0);
         -webkit-mask:
-            linear-gradient(#fff 0 0) content-box, 
-            linear-gradient(#fff 0 0);
+            linear-gradient(white 0 0) content-box, 
+            linear-gradient(white 0 0);
         -webkit-mask-composite: destination-out;
         mask-composite: exclude;
         pointer-events: none;
@@ -92,11 +98,11 @@ nav ul li:last-child a {
     color: black;
     padding: 0.5em 1em;
     border-radius: 50px;
-    background: linear-gradient(#E4E9F3, #8B9AB5);
+    background: linear-gradient(var(--text-color), var(--secondary-text-color));
 }
 
 nav ul li:last-child a:hover {
-    background: #E4E9F3;
+    background: var(--text-color);
     text-decoration: none;
 }
 
@@ -123,7 +129,7 @@ nav ul li:nth-last-child(2) a {
 }
 
 .mainTexts h2 {
-    color: #849ECD;
+    color: var(--secondary-text-color);
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
