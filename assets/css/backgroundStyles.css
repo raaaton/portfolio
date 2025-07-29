@@ -10,7 +10,6 @@ body {
     height: 100vh;
     z-index: -999;
     pointer-events: none;
-    overflow: hidden;
 }
 
 /* Blobs */
