@@ -10,6 +10,16 @@
     --secondary-text-color: #849ECD;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .gradientText {
     background: linear-gradient(to bottom, var(--text-color), var(--secondary-text-color));
     background-clip: text;
@@ -113,16 +123,6 @@ nav ul li:nth-last-child(2) a {
 
 /* Hero section */
 
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
 #hero {
     width: 100vw;
     height: 100vh;
@@ -180,4 +180,11 @@ body {
     to {
         transform: translateY(-5px) rotate(90deg);
     }
+}
+
+/* About section */
+
+#about {
+    width: 100vw;
+    height: 50vh;
 }

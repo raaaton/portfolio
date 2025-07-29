@@ -3,14 +3,14 @@ body {
 }
 
 .background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -999;
-  pointer-events: none;
-  overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -999;
+    pointer-events: none;
+    overflow: hidden;
 }
 
 /* Blobs */
@@ -20,6 +20,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     height: 100vh;
     width: 100vw;
     z-index: -300;
