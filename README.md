@@ -27,9 +27,18 @@ Its main goals are to:
 
 ---
 
+## 🎨 Design
+
+The portfolio was fully designed by myself using **Figma** before development.  
+You can view the design file here:
+
+👉 [View Figma Design](https://www.figma.com/design/n7WhnqkpTsHPgbWZZD5Pem/Portfolio?node-id=0-1&t=D3RrHWTVd21yMDag-1)
+
+---
+
 ## 📁 Project Structure
 
-```
+```md
 portfolio/
 ├── assets/
 │ ├── css/ # Stylesheets
