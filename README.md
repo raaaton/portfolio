@@ -27,14 +27,7 @@ Its main goals are to:
 
 ---
 
-## 📁 Project Structure
-
-portfolio/&nbsp;
-├── assets/&nbsp;
-│ ├── css/ # Stylesheets&nbsp;
-│ ├── js/ # JavaScript files&nbsp;
-│ └── images/ # Images and icons&nbsp;
-└── index.html # Homepage&nbsp;
+<pre lang="md"> ## 📁 Structure du projet ``` portfolio/ ├── assets/ │ ├── css/ # Fichiers CSS │ ├── js/ # Scripts JavaScript │ └── images/ # Images et icônes └── index.html # Page principale du portfolio ``` </pre>
 
 ---
 
