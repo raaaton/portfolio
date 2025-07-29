@@ -1,9 +1,14 @@
-/* TODO: class "textGradient" = text color -> vertical gradient from #E4E9F3 to #8B9AB5 */
-
 * {
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
     color: #E4E9F3;
+}
+
+.gradientText {
+    background: linear-gradient(to bottom, #D1DEF5, #849ECD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Navbar */
