@@ -27,7 +27,16 @@ Its main goals are to:
 
 ---
 
-<pre lang="md"> ## 📁 Structure du projet ``` portfolio/ ├── assets/ │ ├── css/ # Fichiers CSS │ ├── js/ # Scripts JavaScript │ └── images/ # Images et icônes └── index.html # Page principale du portfolio ``` </pre>
+## 📁 Structure du projet 
+
+```
+portfolio/
+├── assets/
+│ ├── css/ # Stylesheets
+│ ├── js/ # JavaScript scripts
+│ └── images/ # Images and icons
+└── index.html
+```
 
 ---
 
@@ -40,3 +49,18 @@ git clone https://github.com/raaaton/portfolio.git
 cd portfolio
 open index.html
 ```
+
+## 📫 Contact
+
+Use the contact form at the bottom of the page to get in touch.  
+Or find me with my email: [pranolouis@gmail.com](mailto:pranolouis@gmail.com).
+
+---
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+> Designed and developed by [@raaaton](https://github.com/raaaton) with ❤️.
