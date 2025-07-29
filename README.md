@@ -27,7 +27,7 @@ Its main goals are to:
 
 ---
 
-## 📁 Structure du projet 
+## 📁 Project Structure
 
 ```
 portfolio/
