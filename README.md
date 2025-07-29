@@ -29,15 +29,12 @@ Its main goals are to:
 
 ## 📁 Project Structure
 
-portfolio/
-├── assets/
-│ ├── css/ # Stylesheets
-│ ├── js/ # JavaScript files
-│ └── images/ # Images and icons
-├── index.html # Homepage
-├── about.html # About me section
-├── projects.html # Projects showcase
-└── contact.html # Contact form
+portfolio/&nbsp;
+├── assets/&nbsp;
+│ ├── css/ # Stylesheets&nbsp;
+│ ├── js/ # JavaScript files&nbsp;
+│ └── images/ # Images and icons&nbsp;
+└── index.html # Homepage&nbsp;
 
 ---
 
