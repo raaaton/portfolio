@@ -7,7 +7,7 @@ function updateGrainHeight() {
     document.body.clientHeight,
     document.documentElement.clientHeight
   );
-  document.querySelector('.grain').style.setProperty('--grain-height', fullHeight + 'px');
+    document.querySelector('.grain').style.setProperty('--grain-height', fullHeight + 'px');
 }
 
 window.addEventListener('load', updateGrainHeight);

@@ -9,9 +9,10 @@ html {
 }
 
 :root {
-    --background: #060612;
+    --background-color: #060612;
     --text-color: #D1DEF5;
     --secondary-text-color: #849ECD;
+    --accent-color: #0f1452;
 }
 
 body {
