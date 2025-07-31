@@ -126,7 +126,8 @@ li a:hover {
     margin-left: auto;
 }
 
-.navList > li:last-child > a {
+.navList > li:last-child a {
+    position: relative;
     color: black;
     padding: 0.5em 1em;
     border-radius: 50px;
@@ -148,7 +149,7 @@ li a:hover {
 }
 
 .navList > li:last-child a:hover::after {
-    opacity: 2001;
+    opacity: 1;
 }
 
 .navList > li:last-child a:hover {
