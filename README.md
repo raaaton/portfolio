@@ -19,11 +19,20 @@ Its main goals are to:
 
 ---
 
-## 🧰 Technologies Used
+## 🛠️ Stack
 
-- **HTML5** – Semantic page structure
-- **CSS3** – Styling, layout, animations, responsive design
-- **Vanilla JavaScript** – Interactive components (menu, transitions, etc.)
+### Front-End
+- **HTML5**
+- **CSS3**
+- **JavaScript** (Vanilla)
+
+### Back-End
+- **PHP** – Handles contact form and connects front-end to the database
+- **MySQL** – Database used to store form data
+- **phpMyAdmin** – GUI for managing the MySQL database
+
+### Hosting & Infrastructure
+- **Hostinger** – Provides web hosting, domain name, and MySQL database
 
 ---
 
