@@ -79,7 +79,8 @@ nav {
     z-index: 1000;
 }
 
-nav ul {
+.navList {
+    position: relative;
     list-style: none;
     width: 100%;
     display: flex;
@@ -87,40 +88,45 @@ nav ul {
     justify-content: center;
     align-items: center;
     padding: 10px 30px;
-    margin: 0;
+    gap: 5vw;
 }
 
-nav ul li {
-    margin-right: 5%;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+}
+
+nav li {
     font-size: 16px;
     font-weight: bold;
 }
 
-nav ul li a {
+nav li > a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+li a:hover {
     text-decoration: underline;
 }
 
-nav ul li:first-child {
+.navList > li:first-child {
     margin-right: auto;
     font-size: 24px;
     font-weight: bolder;
 }
 
-nav ul li:first-child a:hover {
+.navList > li:first-child > a:hover {
     text-decoration: none;
 }
 
-nav ul li:last-child {
+.navList > li:last-child {
+    position: relative;
+    right: -1em;
     margin-left: auto;
-    margin-right: -18px;
 }
 
-nav ul li:last-child a {
-    position: relative;
+.navList > li:last-child > a {
     color: black;
     padding: 0.5em 1em;
     border-radius: 50px;
@@ -130,7 +136,7 @@ nav ul li:last-child a {
     z-index: 2000;
 }
 
-nav ul li:last-child a::after {
+.navList > li:last-child a::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -141,11 +147,11 @@ nav ul li:last-child a::after {
     z-index: -1;
 }
 
-nav ul li:last-child a:hover::after {
+.navList > li:last-child a:hover::after {
     opacity: 2001;
 }
 
-nav ul li:last-child a:hover {
+.navList > li:last-child a:hover {
     color: black;
     text-decoration: none;
     z-index: 2001;
