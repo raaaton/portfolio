@@ -4,7 +4,7 @@ Welcome to the repository of my **personal portfolio** — a minimalist and mode
 
 ## 🚧 WIP
 
-Please note that this portfolio is still under development.
+Please note that this portfolio is still a work in progress.
 
 ## 🔗 Live Website
 
