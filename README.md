@@ -22,16 +22,19 @@ Its main goals are to:
 ## 🛠️ Stack
 
 ### Front-End
+
 - **HTML5**
 - **CSS3**
 - **JavaScript** (Vanilla)
 
 ### Back-End
+
 - **PHP** – Handles contact form and connects front-end to the database
 - **MySQL** – Database used to store form data
 - **phpMyAdmin** – GUI for managing the MySQL database
 
 ### Hosting & Infrastructure
+
 - **Hostinger** – Provides web hosting, domain name, and MySQL database
 
 ---
