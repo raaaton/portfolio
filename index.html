@@ -1,5 +1,3 @@
-<!-- TODO: Add the Projects links -->
-<!-- TODO: Add the Projects details -->
 <!-- TODO: Add the Contact section -->
 
 <!DOCTYPE html>
@@ -13,6 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="./assets/css/main.css" />
         <link rel="stylesheet" href="./assets/css/background.css" />
+        <link rel="stylesheet" href="./assets/css/modals.css" />
         <link rel="stylesheet" href="./assets/css/loader.css" />
         <title>Raton | Portfolio</title>
     </head>
@@ -224,8 +223,14 @@
                         <h3 class="projectTitle">TSP Tool</h3>
                         <p class="projectDesc">A clean web app that combines a timer, stopwatch, and Pomodoro to help manage time effectively.</p>
                         <div class="projectButtons">
-                            <a href="" class="projectButton projectLiveDemo">Live demo<i class="fas fa-arrow-up-right-from-square"></i></a>
-                            <a href="" class="projectButton projectDetails">Details<i class="fas fa-arrow-right"></i></a>
+                            <a href="https://tsp-tool.netlify.app/" target="_blank" class="projectButton projectLiveDemo">Live demo<i class="fas fa-arrow-up-right-from-square"></i></a>
+                            <a href="javascript:void(0)" data-show-modal="modal-project1" class="projectButton projectDetails">Details<i class="fas fa-arrow-right"></i></a>
+                            <dialog id="modal-project1" class="gradientBorder">
+                                <h3>TSP Tool (Timer/Stopwatch/Pomodoro tool)</h3>
+                                <img src="./assets/img/projects/TspTool.png" alt="">
+                                <p>A tidy, all-vanilla-JS time-management tool featuring three modes:<br>• Set a countdown timer for any duration.<br>• Measure elapsed time with a stopwatch (start / pause / reset).<br>• Use Pomodoro technique with adjustable work, short-break and long-break intervals via tabs.</p>
+                                <button data-close="modal-project1"><i class="fas fa-xmark"></i></button>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -235,8 +240,14 @@
                         <h3 class="projectTitle">Password Generator</h3>
                         <p class="projectDesc">A basic tool to generate secure passwords with custom length. Created while learning DOM manipulation with JavaScript.</p>
                         <div class="projectButtons">
-                            <a href="" class="projectButton projectLiveDemo">Live demo<i class="fas fa-arrow-up-right-from-square"></i></a>
-                            <a href="" class="projectButton projectDetails">Details<i class="fas fa-arrow-right"></i></a>
+                            <a href="https://raton-password-generator.netlify.app/" target="_blank" class="projectButton projectLiveDemo">Live demo<i class="fas fa-arrow-up-right-from-square"></i></a>
+                            <a href="javascript:void(0)" data-show-modal="modal-project2" class="projectButton projectDetails">Details<i class="fas fa-arrow-right"></i></a>
+                            <dialog id="modal-project2" class="gradientBorder">
+                                <h3>Password Generator</h3>
+                                <img src="./assets/img/projects/PasswordGen.png" alt="">
+                                <p>A simple web tool for generating secure passwords of custom length, based on a Scrimba design template. Includes a click-to-copy function and a clear feature to generate multiple new passwords easily.</p>
+                                <button data-close="modal-project2"><i class="fas fa-xmark"></i></button>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -246,8 +257,14 @@
                         <h3 class="projectTitle">Personal Portfolio</h3>
                         <p class="projectDesc">A responsive and modern website to showcase my skills, projects, and contact details, with a dynamic homepage and project highlights.</p>
                         <div class="projectButtons">
-                            <a href="" class="projectButton projectLiveDemo">Live demo<i class="fas fa-arrow-up-right-from-square"></i></a>
-                            <a href="" class="projectButton projectDetails">Details<i class="fas fa-arrow-right"></i></a>
+                            <a href="/" target="_blank" class="projectButton projectLiveDemo">Live demo<i class="fas fa-arrow-up-right-from-square"></i></a>
+                            <a href="javascript:void(0)" data-show-modal="modal-project3" class="projectButton projectDetails">Details<i class="fas fa-arrow-right"></i></a>
+                            <dialog id="modal-project3" class="gradientBorder">
+                                <h3>Personal Portfolio</h3>
+                                <img src="./assets/img/projects/Portfolio.png" alt="">
+                                <p>A static one-page website built with plain HTML5, CSS3 and vanilla JavaScript (no frameworks). Highlights your personal and collaborative projects and presents your technical skills via dedicated sections and smooth internal navigation.</p>
+                                <button data-close="modal-project3"><i class="fas fa-xmark"></i></button>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -258,6 +275,7 @@
         <div class="loader"></div>
         
         <script src="./assets/js/infiniteCarousel.js"></script>
+        <script src="./assets/js/modals.js"></script>
         <script src="./assets/js/grainHeight.js"></script>
         <script src="./assets/js/loader.js"></script>
     </body>
