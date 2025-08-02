@@ -7,6 +7,7 @@ document.querySelectorAll('[data-show-modal]').forEach(btn => {
         const backdrop = document.createElement('div');
         backdrop.className = 'custom-backdrop';
         backdrop.dataset.modalId = modalId;
+        backdrop.dataset.close = modalId;
         document.body.appendChild(backdrop);
         
         dialog.showModal();
@@ -17,10 +18,6 @@ document.querySelectorAll('[data-show-modal]').forEach(btn => {
         });
         
         setTimeout(() => dialog.classList.remove('opening'), 300);
-        
-        backdrop.addEventListener('click', () => {
-            closeModal(dialog, backdrop);
-        });
     });
 });
 
@@ -35,16 +32,32 @@ document.querySelectorAll('[data-close]').forEach(btn => {
     });
 });
 
-// Close modal if clicking outside content
-document.querySelectorAll('dialog').forEach(dialog => {
-    dialog.addEventListener('click', e => {
-        if (e.target === dialog) {
-            const modalId = dialog.id;
-            const backdrop = document.querySelector(`.custom-backdrop[data-modal-id="${modalId}"]`);
-            closeModal(dialog, backdrop);
-        }
-    });
+// Close current modal when clicking outside of it
+document.addEventListener('click', (e) => {
+    if (e.target === document.documentElement) {
+        const backdrop = document.querySelector(".custom-backdrop");
+        const modalId = backdrop.getAttribute('data-modal-id');
+        const dialog = document.getElementById(modalId);
+        
+        closeModal(dialog, backdrop);
+    }
 });
+
+function closeModal(dialog, backdrop) {
+    dialog.classList.add('closing');
+    
+    if (backdrop) {
+        backdrop.classList.remove('show');
+    }
+    
+    setTimeout(() => {
+        dialog.classList.remove('closing');
+        dialog.close();
+        if (backdrop) {
+            backdrop.remove();
+        }
+    }, 300);
+}
 
 function closeModal(dialog, backdrop) {
     dialog.classList.add('closing');
