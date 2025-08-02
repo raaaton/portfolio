@@ -4,7 +4,6 @@ document.querySelectorAll('[data-show-modal]').forEach(btn => {
         const modalId = btn.getAttribute('data-show-modal');
         const dialog = document.getElementById(modalId);
         
-        // Créer le backdrop personnalisé
         const backdrop = document.createElement('div');
         backdrop.className = 'custom-backdrop';
         backdrop.dataset.modalId = modalId;
@@ -13,14 +12,12 @@ document.querySelectorAll('[data-show-modal]').forEach(btn => {
         dialog.showModal();
         dialog.classList.add('opening');
         
-        // Animer le backdrop
         requestAnimationFrame(() => {
             backdrop.classList.add('show');
         });
         
         setTimeout(() => dialog.classList.remove('opening'), 300);
         
-        // Fermer en cliquant sur le backdrop
         backdrop.addEventListener('click', () => {
             closeModal(dialog, backdrop);
         });
@@ -41,15 +38,7 @@ document.querySelectorAll('[data-close]').forEach(btn => {
 // Close modal if clicking outside content
 document.querySelectorAll('dialog').forEach(dialog => {
     dialog.addEventListener('click', e => {
-        const rect = dialog.getBoundingClientRect();
-        const clickedInDialog = (
-            e.clientX >= rect.left &&
-            e.clientX <= rect.right &&
-            e.clientY >= rect.top &&
-            e.clientY <= rect.bottom
-        );
-        
-        if (!clickedInDialog) {
+        if (e.target === dialog) {
             const modalId = dialog.id;
             const backdrop = document.querySelector(`.custom-backdrop[data-modal-id="${modalId}"]`);
             closeModal(dialog, backdrop);
