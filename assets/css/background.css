@@ -15,6 +15,11 @@ body {
 
 /* Blobs */
 
+.blob {
+    background-size: cover;
+    width: auto;
+}
+
 #headerBlobCtn,
 #underHeaderBlobCtn {
     position: absolute;
@@ -49,8 +54,9 @@ body {
 #underHeaderBlob {
     height: 200%;
     width: 200%;
-    animation: underHeaderBlobAnim 25s infinite alternate;
     opacity: 1;
+
+    animation: underHeaderBlobAnim 20s infinite alternate;
 }
 @keyframes underHeaderBlobAnim {
     from {
@@ -58,6 +64,79 @@ body {
     }
     to {
         opacity: 0.1;
+    }
+}
+
+#aboutBlobCtn {
+    height: 60vh;
+    display: flex;
+    justify-content: end;
+    filter: blur(100px);
+    opacity: 0.75;
+}
+#aboutBlob {
+    height: 200%;
+    width: 70vw;
+    margin: -20% -10% 0 0;
+
+    animation: aboutBlobAnim 25s infinite alternate;
+}
+@keyframes aboutBlobAnim {
+    from {
+        transform: rotate(40deg);
+    }
+    to {
+        transform: rotate(-40deg);
+    }
+}
+
+#skillsBlobCtn {
+    position: relative;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    filter: blur(100px);
+}
+#skillsBlob {
+    position: absolute;
+    top: -15vw;
+    left: 0;
+    height: 250%;
+
+    animation: skillsBlobAnim 20s infinite alternate;
+}
+@keyframes skillsBlobAnim {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(1000px);
+    }
+    to {
+        opacity: 0.75;
+        transform: scale(1.5);
+    }
+}
+
+#projectsBlobCtn {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: end;
+    filter: blur(100px);
+}
+#projectsBlob {
+    height: 150%;
+    margin-top: -10vw;
+    margin-right: -10vw;
+
+    animation: projectsBlobAnim 25s infinite alternate;
+}
+@keyframes projectsBlobAnim {
+    from {
+        transform: rotate(20deg);
+    }
+    to {
+        transform: rotate(-20deg);
     }
 }
 

@@ -455,10 +455,10 @@ footer {
 }
 
 .projectDetails {
-    background: #1f1f3a;
+    background: rgb(67, 67, 86, 0.25);
     padding: 0.5em 1em;
     border-radius: 10px;
-    outline: 0px solid #1f1f3a;
+    outline: 0px solid rgb(67, 67, 86, 0.25);
 }
 
 .projectButton,
@@ -468,4 +468,6 @@ footer {
 
 .projectDetails:hover {
     transform: scale(1.05);
+    background: rgba(67, 69, 86, 0.5);
+    outline: 0px solid rgba(67, 69, 86, 0.5);
 }
