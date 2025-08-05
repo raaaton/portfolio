@@ -60,6 +60,8 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
+    line-height: 1;
 }
 
 i {
@@ -195,8 +197,11 @@ footer {
 }
 
 .mainTexts h1 {
-    font-size: 64px;
+    font-size: 100px;
     font-weight: bold;
+    letter-spacing: -6px;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .mainTexts h2 {
@@ -204,7 +209,7 @@ footer {
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-top: -40px;
+    margin: 0;
 }
 
 .ctaAbout {
@@ -379,13 +384,13 @@ footer {
 #projects {
     position: relative;
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    scroll-margin-top: calc(50vh - 50vh);
+    scroll-margin-top: calc(50vh - 45vh);
 }
 
 .projectsCtn {
@@ -470,4 +475,69 @@ footer {
     transform: scale(1.05);
     background: rgba(67, 69, 86, 0.5);
     outline: 0px solid rgba(67, 69, 86, 0.5);
+}
+
+/* Contact section */
+
+#contact {
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact-main h3 {
+    margin: 0;
+}
+
+.contact-mail {
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration-color: var(--secondary-text-color);
+    cursor: pointer;
+    background: linear-gradient(
+        to bottom,
+        var(--text-color) 0%,
+        var(--text-color) 50%,
+        var(--secondary-text-color) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        background-size: 100% 200%;
+        background-position: bottom;
+        margin: 0;
+
+        transition: all 0.3s ease;
+    }
+    
+.contact-mail:hover {
+    background-position: top;
+    text-decoration-color: var(--text-color);
+}
+
+.contact-main p {
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact-link {
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    transform: scale(1.25);
 }

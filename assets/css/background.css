@@ -125,8 +125,8 @@ body {
     filter: blur(100px);
 }
 #projectsBlob {
-    height: 150%;
-    margin-top: -10vw;
+    height: 100%;
+    margin-top: -5vw;
     margin-right: -10vw;
 
     animation: projectsBlobAnim 25s infinite alternate;
