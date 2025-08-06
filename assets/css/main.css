@@ -6,6 +6,8 @@
 }
 
 html {
+    overflow-x: hidden;
+    width: 100vw;
     scroll-behavior: smooth;
 }
 
@@ -23,6 +25,8 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 /* Common style to all sections */
@@ -84,6 +88,7 @@ nav {
     width: 60vw;
     border-radius: 30px;
     z-index: 1000;
+    margin: 0 auto;
 }
 
 .navList {
@@ -142,6 +147,7 @@ li a:hover {
     overflow: hidden;
     transition: color 0.3s ease-in-out;
     z-index: 2000;
+    white-space: nowrap;
 }
 
 .navList > li:last-child a::after {
@@ -165,12 +171,18 @@ li a:hover {
     z-index: 2001;
 }
 
+.navLinks li:last-child {
+    display: none;
+}
+
 /* Sections in general */
 
 header,
 section,
 footer {
-    padding: 0 25px;
+    padding: 0 20px;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .sectionTitle {
@@ -200,8 +212,11 @@ footer {
     font-size: 100px;
     font-weight: bold;
     letter-spacing: -6px;
+    text-align: center;
     margin: 0;
     margin-bottom: 5px;
+    max-width: 90vw;
+    word-wrap: break-word;
 }
 
 .mainTexts h2 {
