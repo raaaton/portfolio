@@ -6,6 +6,14 @@
         top: 20px;
         height: auto;
         min-height: 50px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    nav.menu-open {
+        background-color: var(--background-color) !important;
+        backdrop-filter: none !important;
+        height: auto;
     }
     
     .navList {
@@ -43,14 +51,11 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(6, 6, 18, 0.95);
-        backdrop-filter: blur(25px);
         border-radius: 0 0 30px 30px;
         flex-direction: column;
-        gap: 15px;
+        gap: 30px;
         padding: 15px 0;
         margin: 0;
-        transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
@@ -61,6 +66,7 @@
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+        background: var(--background-color);
     }
 
     .navLinks li {
@@ -76,12 +82,8 @@
         display: none;
     }
 
-    nav.menu-open {
-        height: auto;
-    }
-
-    nav.menu-open .navList {
-        min-height: 200px;
+    nav.menu-open.gradientBorder::after {
+        display: none !important;
     }
 
     /* Hero Section */
@@ -240,6 +242,25 @@
         top: 30px;
         height: auto;
         min-height: 60px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    nav.menu-open {
+        background-color: var(--background-color) !important;
+        backdrop-filter: none !important;
+    }
+
+    nav.menu-open .navList {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        min-height: 60px;
+        position: relative;
+    }
+
+    nav.menu-open.gradientBorder::after {
+        display: none !important;
     }
     
     .navList {
@@ -273,14 +294,11 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(6, 6, 18, 0.95);
-        backdrop-filter: blur(25px);
         border-radius: 0 0 30px 30px;
         flex-direction: column;
         gap: 20px;
         padding: 20px 0;
         margin: 0;
-        transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
@@ -291,6 +309,7 @@
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+        background: var(--background-color);
     }
 
     .navLinks li {
@@ -308,10 +327,6 @@
 
     nav.menu-open {
         height: auto;
-    }
-
-    nav.menu-open .navList {
-        min-height: 230px;
     }
 
     /* Hero Section */
@@ -591,13 +606,11 @@
         left: 0;
         width: 100%;
         background: rgba(6, 6, 18, 0.95);
-        backdrop-filter: blur(25px);
         border-radius: 0 0 30px 30px;
         flex-direction: column;
         gap: 15px;
         padding: 15px 0;
         margin: 0;
-        transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
@@ -742,7 +755,7 @@
     height: 2px;
     background-color: var(--text-color);
     margin: 2px 0;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Burger animation */
