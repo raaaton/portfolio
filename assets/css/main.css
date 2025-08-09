@@ -502,6 +502,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 200px;
+    overflow: hidden;
 }
 
 .contact-main {
@@ -550,9 +551,32 @@ footer {
 }
 
 .contact-link {
-    transition: all 0.3s ease;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
 }
 
 .contact-link:hover {
-    transform: scale(1.25);
+    animation-name: contactLinkHover;
+}
+
+.contact-link:not(:hover) {
+    animation-name: contactLinkHoverOut;
+}
+
+@keyframes contactLinkHover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.25);
+    }
+}
+
+@keyframes contactLinkHoverOut {
+    from {
+        transform: scale(1.25);
+    }
+    to {
+        transform: scale(1);
+    }
 }

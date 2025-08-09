@@ -128,4 +128,5 @@ dialog button i {
 
 dialog button:hover i {
     color: red;
+    cursor: pointer;
 }
