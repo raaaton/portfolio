@@ -452,6 +452,7 @@ footer {
 .projectDesc {
     margin: 0;
     flex-grow: 1;
+    margin-bottom: 10px
 }
 
 .projectButtons {
@@ -459,7 +460,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 }
 
 .projectButtons a {
