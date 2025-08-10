@@ -2,10 +2,6 @@
 
 Welcome to the repository of my **personal portfolio** — a minimalist and modern website to showcase my projects, skills, and experience as a front-end developer.
 
-## 🚧 WIP
-
-Please note that this portfolio is still a work in progress.
-
 ## 🔗 Live Website
 
 👉 [raton.io/portfolio](https://raton.io)
