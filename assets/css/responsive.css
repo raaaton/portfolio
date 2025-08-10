@@ -173,6 +173,7 @@
         width: 100%;
         max-width: 350px;
         height: auto;
+        padding-bottom: 15px;
     }
     
     .projectImg {

@@ -416,10 +416,11 @@ footer {
 .projectCard {
     background: transparent;
     backdrop-filter: blur(25px);
-    height: 400px;
+    min-height: 400px;
     width: 450px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
     padding: 20px;
+    padding-bottom: 35px;
     border-radius: 30px;
     overflow: hidden;
 
